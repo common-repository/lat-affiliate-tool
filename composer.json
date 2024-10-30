@@ -1,0 +1,6 @@
+{
+    "require": {
+        "thewirecutter/paapi5-php-sdk": "^1.0",
+        "fightbulc/moment": "^1.32"
+    }
+}

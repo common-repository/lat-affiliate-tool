@@ -1,0 +1,224 @@
+html {
+  font-size: 13px;
+}
+
+.modal {
+  z-index: 99999;
+}
+
+#add_new_product .modal-card-foot,
+#add_new_product .modal-card-head {
+  padding: 5px 20px;
+}
+
+#add_new_product .modal-content {
+  background: #fff;
+}
+
+.product-item-wrapper {
+  display: grid;
+  grid: 'addProductArea thumbnailArea titleArea titleArea titleArea' 'addProductArea thumbnailArea . . .';
+  column-gap: 10px;
+}
+
+.product-thumbnail {
+  grid-area: thumbnailArea;
+  width: 50px;
+  text-align: center;
+}
+
+.product-title {
+  grid-area: titleArea;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.add-product {
+  grid-area: addProductArea;
+}
+
+.product-detail-value {
+  margin-left: 5px;
+}
+
+.loading-result,
+.load-more-btn-wrapper {
+  justify-content: center;
+}
+
+.product-selected {
+  background: #fff1ca;
+}
+
+#select-properties-dropdown-wrapper input[type='checkbox'],
+#select-properties-dropdown-wrapper input[type='radio'] {
+  vertical-align: middle;
+}
+
+#properties-dropdown-content-wrapper .dropdown-content {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#properties-dropdown-content-wrapper .dropdown-item {
+  white-space: nowrap;
+}
+
+.widefat .check-column {
+  padding: 7px 3px;
+}
+
+.latat-meta-box {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.latat-meta-box:first-child {
+  margin-top: 0;
+}
+
+.latat-meta-box-title {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccd0d4;
+}
+
+.latat-meta-box-body {
+  padding: 5px 10px;
+  background: #f9f9f9;
+}
+
+.table-style .latat-meta-box-body {
+  display: grid;
+  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.table-style .latat-meta-box-body label {
+  border: 1px solid #5b9bd5;
+  border-radius: 5px;
+  padding: 5px 2.5px 1px;
+  vertical-align: middle;
+}
+
+.table-style .latat-meta-box-body label.disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.table-style .latat-meta-box-body input[type='radio'],
+.table-style .latat-meta-box-body span {
+  display: none;
+}
+.table-style .latat-meta-box-body input[type='radio']:checked + label {
+  position: relative;
+}
+.table-style .latat-meta-box-body input[type='radio']:checked + label:before {
+  background: rgba(33, 149, 255, 0.13) url(../imgs/checked.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.is-hidden {
+  display: none;
+}
+.ui-state-default {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  padding: 5px 10px 5px 20px;
+  margin-bottom: 5px;
+}
+#sortable .highlight {
+  border: 1px solid red;
+  font-weight: bold;
+  background-color: #333333;
+  margin-bottom: 5px;
+}
+#sortable {
+  overflow: auto;
+}
+
+.product-hl ul {
+  list-style: initial !important;
+  padding-left: 2rem;
+}
+.trumbowyg-box .trumbowyg-editor {
+  background: #fff;
+  padding: 5px;
+}
+.trumbowyg-box,
+.trumbowyg-editor {
+  min-height: 100px;
+  margin: 0;
+}
+
+textarea#custom_css {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px;
+}
+
+.edit-table-noti {
+  display: none;
+}
+
+#search-status {
+  color: #999;
+  font-style: italic;
+  padding: 10px 20px;
+}
+
+#search-status.error {
+  font-style: normal;
+  color: #d43232;
+}
+
+#search-status.searching {
+  font-style: normal;
+  color: black;
+}
+
+.is-inline-flex .column.right {
+  width: 300px;
+}
+
+.mt-5px {
+  margin-top: 5px;
+}
+
+.btn-loading {
+  position: relative;
+  background-color: #fff !important;
+  border-color: #999 !important;
+  color: #333 !important;
+}
+.btn-loading:after {
+  cursor: wait !important;
+  animation: btn-loading 1s linear infinite;
+  background: repeating-linear-gradient(-60deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15) 1em, rgba(0, 0, 0, 0.15) 1em, rgba(0, 0, 0, 0.15) 2em);
+  /* determines size */
+  background-size: 200%;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@keyframes btn-loading {
+  from {
+    background-position: -4em 0;
+  }
+  to {
+    background-position: -1.7em 0;
+  }
+}
